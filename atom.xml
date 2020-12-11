@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
-    <title>Gridea</title>
-    <updated>2020-12-11T11:01:10.395Z</updated>
+    <title>TIBUTI</title>
+    <updated>2020-12-11T12:04:06.414Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>T否T否，应是红肥绿瘦</subtitle>
     <logo>https://tibuti.cn/images/avatar.png</logo>
     <icon>https://tibuti.cn/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, TIBUTI</rights>
     <entry>
         <title type="html"><![CDATA[001]]></title>
         <id>https://tibuti.cn/post/001/</id>
