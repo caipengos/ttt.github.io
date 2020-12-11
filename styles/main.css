@@ -372,8 +372,8 @@ td {
   font-weight: bold;
   font-family: 'lantingblack';
   background: #feb2b2 !important;
-  background: -webkit-linear-gradient(to right, #ff2738, #db1e10, #530004) !important;
-  background: linear-gradient(to right, #ff2738, #db1e10, #530004) !important;
+  background: -webkit-linear-gradient(to right, red 50%, #a30d17 100%, #8b0b0b 200%) !important;
+  background: linear-gradient(to right, red 50%, #a30d17 100%, #8b0b0b 200%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   -webkit-box-decoration-break: clone !important;
