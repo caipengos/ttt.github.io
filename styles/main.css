@@ -350,47 +350,19 @@ td {
   flex-direction: column;
   padding: 0 24px;
 }
-@font-face {
-  font-family: 'lantingblack';
-  src: url('https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/fonts/lantingblack.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'lantingstrongblackfang';
-  src: url('https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/fonts/lantingstrongblackfang.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'fanzhengjunhei';
-  src: url('https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/fonts/fanzhengjunhei.ttf') format('truetype');
-}
 .site-header {
   padding: 48px 0;
   text-align: center;
 }
 .site-header .site-title {
-  font-size: 55px;
-  letter-spacing: -6px;
+  font-size: 32px;
   font-weight: bold;
-  font-family: 'lantingblack';
-  background: #feb2b2 !important;
-  background: -webkit-linear-gradient(to right, red 50%, #a30d17 100%, #8b0b0b 200%) !important;
-  background: linear-gradient(to right, red 50%, #a30d17 100%, #8b0b0b 200%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  -webkit-box-decoration-break: clone !important;
-  box-decoration-break: clone !important;
 }
 .site-header .site-description {
-  font-size: 15px;
-  text-indent: 15px;
-  font-family: 'fanzhengjunhei';
-  margin-top: -13px;
-  background: #c1feb2 !important;
-  background: -webkit-linear-gradient(to right, #30ff8a, #11D06D, #0c2b19) !important;
-  background: linear-gradient(to right, #30ff8a, #11D06D, #0c2b19) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  -webkit-box-decoration-break: clone !important;
-  box-decoration-break: clone !important;
+  font-size: 16px;
+  padding: 24px;
+  color: #495057;
+  font-weight: lighter;
 }
 .site-header .menu-container {
   display: flex;
