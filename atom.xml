@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2020-12-13T19:43:44.072Z</updated>
+    <updated>2020-12-13T19:50:55.781Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -11,12 +11,12 @@
     <icon>https://tibuti.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, TIBUTI</rights>
     <entry>
-        <title type="html"><![CDATA[关于]]></title>
+        <title type="html"><![CDATA[众望TIBUTI]]></title>
         <id>https://tibuti.cn/post/about/</id>
         <link href="https://tibuti.cn/post/about/">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="关于tibuti">关于Tibuti</h3>
+        <content type="html"><![CDATA[<h3 id="关于tibuti">关于TIBUTI</h3>
 <p><code><strong>Tibuti，全国首个敢面向市场公开量化结果的网站。</strong></code>Tibuti（记“t不t”）主要以量化分析的方式来测算股票未来的<code>最高价格</code>，主张有预见、主见的做T增加盈利或避免大幅回撤。</p>
 <h3 id="关于红肥绿瘦">关于红肥绿瘦</h3>
 <p>Slogan: T否T否，应是红肥绿瘦。<br>
