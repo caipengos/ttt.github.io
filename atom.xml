@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2020-12-12T18:47:33.286Z</updated>
+    <updated>2020-12-13T18:05:14.762Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -11,49 +11,50 @@
     <icon>https://tibuti.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, TIBUTI</rights>
     <entry>
-        <title type="html"><![CDATA[000]]></title>
-        <id>https://tibuti.cn/post/000/</id>
-        <link href="https://tibuti.cn/post/000/">
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://tibuti.cn/post/about/</id>
+        <link href="https://tibuti.cn/post/about/">
         </link>
-        <updated>2020-12-12T12:37:08.000Z</updated>
-        <content type="html"><![CDATA[<table ><tbody ><details ><summary><sub><b>Click to see more:</b></sub><h6> Given the following python code </h6>
-<pre><code class="language-python">from pychartjs import BaseChart
-class myChart(BaseChart):
-    pass
-chartJSON = myChart().get()
-</code></pre>
-</summary><hr>
-<h6>Write the following HTML</h6>
-<pre><code class="language-html">
-</code></pre>
-<h6>... and JS</h6>
-<pre><code class="language-js">var data = {{ chartJSON | safe }}
-var ctx = document.getElementById(&quot;myChart&quot;).getContext('2d');
-var myChart = new Chart(ctx, data);
-</code></pre>
-</details></td></tr></tbody>
-</table>
-<table ><tbody ><tr><td><details ><summary><sub><b>Click to see more:</b></sub><h6> Given the following python code </h6>
-<pre><code class="language-python">
- from pychartjs import BaseChart
-class myChart(BaseChart):
-    pass
-chartJSON = myChart().get()
-/// 点击打开查看更多
-</code></pre>
-</summary><hr>
-<h6>Write the following HTML</h6>
-<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-   &lt;canvas id=&quot;myChart&quot;&gt;&lt;/canvas&gt;
-&lt;/div&gt;
-</code></pre>
-<h6>... and JS</h6>
-<pre><code class="language-js">var data = {{ chartJSON | safe }}
-var ctx = document.getElementById(&quot;myChart&quot;).getContext('2d');
-var myChart = new Chart(ctx, data);
-</code></pre>
-</details></td></tr></tbody>
-</table>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="关于tibuti">关于TIBUTI</h3>
+<p>Tibuti，全国首个敢直面市场公开量化结果的网站。Tibuti（记“t不t”）主要以量化分析的方式来测算股票未来的<font color = #d63c3c ><strong>最高价格</strong></font>，主张有预见、主见的做T增加盈利或避免大幅回撤。</p>
+<h3 id="关于红肥绿瘦">关于红肥绿瘦</h3>
+<p>Slogan:T否T否，应是红肥绿瘦。</p>
+<ul>
+<li>红肥：股票大涨高卖低买（能挣多挣）</li>
+<li>绿瘦：大幅回落提前预判（少亏为盈）</li>
+</ul>
+<p><strong>最高价格探索的是股票日交易振幅内的可T空间，且对收盘结果持放任态度</strong><br>
+最高价格是以一个精准到0.000001元的确定值展示而不是碰运气的任意区间值，真假两半掰，花一两个交易日的时间便可做出判断。</p>
+<ul>
+<li>
+<p>Tibuti最高价格的测算实行的是确定值，对最低价格则实行参考值（尚不成熟暂不公开）。一旦触碰最高价格，实现第一步高卖，低买则需要自己去按照预设期望值实施，比如2%、3%……</p>
+</li>
+<li>
+<p>对收盘结果持放任态度是指不以收盘结果来衡量策略的准确性，衡量的标准特指日内最高价格，做过量化分析的人应该知道测算最高价格比测算最低价格准确率要高的多。</p>
+</li>
+</ul>
+<h4 id="严肃的现实问题">严肃的现实问题</h4>
+<h5 id="因小失大">因小失大</h5>
+<p>这里面有一个非常严肃的现实问题，如果测算的最高价格低于实际价格做T就会导致收益减少，甚至丢了仓位后面交易日也没有低于卖价的点恢复仓位。短期看这个损失就是实实在在的损失尤其是那种连涨股票，这个损失技术角度来看没有直接手段可以规避，“求仁得仁，求锤得锤”。</p>
+<p>虽然没有直接手段，但是间接手段还是蛮丰富的。比如自我看好这只票小仓位做个T，成功了皆大欢喜，失败了也无妨毕竟本金安全为王。</p>
+<p>出现测算最高价低于实际价格的原因是Tibuti的策略是按照同一规则无差别去计算A股全部股票，考虑到了共同性特征而没能兼顾个性特征，这就需要采纳该策略的股民有自己的理解力。</p>
+<p>虽然我以诚实的态度直面了这种客观存在的风险，但是我主观上感受还是参考策略得到的价值实际会大于参考策略丢失的价值。</p>
+<h5 id="鼓吹做t">鼓吹做T</h5>
+<p>我的主张是“有预见、有主见的T”。</p>
+<p>Tibuti，是真是假是妖是神一验则明。</p>
+<h4 id="t不t的-t">“T不T”的 T</h4>
+<p>相对于其他人分享了个寂寞不同，Tibuti弱化去讲量化的逻辑、计算的方式，直接分享T+1量化分析结果。</p>
+<p>· 测算T+1可能出现的最高价位<br>
+· 测判T+1会不会出现大幅回落</p>
+<p>目前可实现的策略有T+1（日）、T+5（周），T+5是T+1的同规则延伸，只分享T+1是因为日内交易更能体现策略的灵敏性，T+5相对保守适用于大仓位。</p>
+<p>回到Tibuti策略来说，任意377个交易日<strong>无差别</strong>计算A股所有股票T+1最高价格误差率在1.5%以内的准确率高达<font color = #d63c3c ><strong>64.78%</strong></font>。单看64.78%这个数字要么是骗子要么是神棍，事实上64.78%里面有几百只日振幅在1.5%以内的票和明显被高估（测得某股T+1涨幅将要超过10%以上）的票，清洗掉这部分数据后的平均准确率在53.29%。回测剔除这两类明显格格不入的数据后统计的准确率好像也不存在什么可喷之处了。</p>
+<p><strong>53.29%，是Tibuti目前相对稳定的测算准确率。</strong></p>
+<h4 id="t不t的-不">“T不T”的 不</h4>
+<p>个人独立量化分析研究人，受限制于方方面面但是基本的坚持会一如既往。<br>
+· 不收费 不推票 不建群 不开课，Tibuti因运营需要接受来自网友的打赏和捐赠<br>
+· 诚恳接受各方建议和指正，但不交流量化分析结果之外的任何<br>
+邮箱：ortis@qq.com</p>
 ]]></content>
     </entry>
 </feed>
