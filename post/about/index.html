@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>众望TIBUTI | TIBUTI</title>
-<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608064413997">
+<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608064836944">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://tibuti.cn/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="众望TIBUTI | TIBUTI - Atom Feed" href="https://tibuti.cn/atom.xml">
@@ -23,7 +23,7 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
       <div class="main-content">
         <div class="site-header">
   <a href="https://tibuti.cn">
-  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1608064413997" alt="">
+  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1608064836944" alt="">
   </a>
   <h1 class="site-title">
     TIBUTI
@@ -175,6 +175,25 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
  </p>
 <h2 id="风险告知">风险告知</h2>
 <p>本站点所示所有仅供参考，不作为投资者交易的依据，投资者据此操作，风险自担。</p>
+<table ><tbody ><tr></tr><tr><td><details ><summary><sub><b>Click to see more:</b></sub><h6> Given the following python code </h6>
+<pre><code class="language-python">from pychartjs import BaseChart
+class myChart(BaseChart):
+    pass
+chartJSON = myChart().get()
+</code></pre>
+</summary><hr>
+<h6>Write the following HTML</h6>
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+   &lt;canvas id=&quot;myChart&quot;&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+</code></pre>
+<h6>... and JS</h6>
+<pre><code class="language-js">var data = {{ chartJSON | safe }}
+var ctx = document.getElementById(&quot;myChart&quot;).getContext('2d');
+var myChart = new Chart(ctx, data);
+</code></pre>
+</details></td></tr></tbody>
+</table>
 <h3 id="联系">联系</h3>
 <p>邮箱：ortis@qq.com</p>
 
