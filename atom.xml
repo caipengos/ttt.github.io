@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2020-12-15T21:30:16.701Z</updated>
+    <updated>2020-12-15T21:34:06.999Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://tibuti.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, TIBUTI</rights>
     <entry>
-        <title type="html"><![CDATA[02]]></title>
+        <title type="html"><![CDATA[03]]></title>
         <id>https://tibuti.cn/post/02/</id>
         <link href="https://tibuti.cn/post/02/">
         </link>
