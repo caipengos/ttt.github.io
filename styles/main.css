@@ -1004,7 +1004,7 @@ td {
 }
 
       .main {
-        max-width: 850px;
+        max-width: 950px;
       }
     
       .post-container .post .post-title {
@@ -1022,10 +1022,6 @@ td {
     
       body {
         font-family: Georgia, serif;
-      }
-    
-      .toc-container {
-        display: none;
       }
     
       a {
