@@ -1004,7 +1004,7 @@ td {
 }
 
       .main {
-        max-width: 110%;
+        max-width: 90%;
       }
     
       .post-container .post .post-title {
@@ -1031,9 +1031,4 @@ td {
       a:hover {
         color: #fa5252;
       }
-    
-      .postBody blockquote {
-    background-image: none;
-    padding: 10px;
-}
     
