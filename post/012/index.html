@@ -2,21 +2,47 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>折叠 | TIBUTI</title>
+<title>012 | TIBUTI</title>
 <link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608141534808">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://tibuti.cn/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="折叠 | TIBUTI - Atom Feed" href="https://tibuti.cn/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="012 | TIBUTI - Atom Feed" href="https://tibuti.cn/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="Click to see more: Given the following python code 
-from pychartjs import BaseChart
-class myChart(BaseChart):
-    pass
-c..." />
-    <meta name="keywords" content="T+1" />
+    <meta name="description" content="
+
+带有分页排序功能的表格
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+序号
+型号
+批次
+任务系列号
+工艺文件编号
+时间
+
+
+
+
+
+..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -60,44 +86,51 @@ c..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              折叠
+              012
             </h2>
             <div class="post-info">
               <span>
-                2020-12-12
+                2020-12-17
               </span>
               <span>
                 1 min read
               </span>
               
-                <a href="https://tibuti.cn/tag/v3tloXjUD1/" class="post-tag">
-                  # T+1
-                </a>
-              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <table ><tbody ><tr></tr><tr><td><details ><summary><sub><b>Click to see more:</b></sub><h6> Given the following python code </h6>
-<pre><code class="language-python">from pychartjs import BaseChart
-class myChart(BaseChart):
-    pass
-chartJSON = myChart().get()
-</code></pre>
-</summary><hr>
-<h6>Write the following HTML</h6>
-<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-   &lt;canvas id=&quot;myChart&quot;&gt;&lt;/canvas&gt;
-&lt;/div&gt;
-</code></pre>
-<h6>... and JS</h6>
-<pre><code class="language-js">var data = {{ chartJSON | safe }}
-var ctx = document.getElementById(&quot;myChart&quot;).getContext('2d');
-var myChart = new Chart(ctx, data);
-</code></pre>
-</details></td></tr></tbody>
+                <html>
+<head>
+<title>带有分页排序功能的表格</title>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/slimtable.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<link rel="stylesheet" href="css/slimtable.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<br/>
+<input id="startDate" type="text" value="2000-01-10 00:00:12"/>
+<br/>
+<input id='endDate' type='text' value="2017-01-10 00:00:12" />
+<input id="search" type="button" value="查询"/>
+<br/>
+<table id="exampletable">
+<thead id="thead1">
+<tr>
+<th>序号</th>
+<th>型号</th>
+<th>批次</th>
+<th>任务系列号</th>
+<th>工艺文件编号</th>
+<th>时间</th>
+</tr>
+</thead>
+<tbody id="tbody1"></tbody>
 </table>
-
+</body>
+</html>
               </div>
               <div class="toc-container">
                 
@@ -106,6 +139,15 @@ var myChart = new Chart(ctx, data);
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://tibuti.cn/post/09090/">
+              <h3 class="post-title">
+                09090
+              </h3>
+            </a>
+          </div>
         
 
         
