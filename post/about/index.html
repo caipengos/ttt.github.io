@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>众望TIBUTI | TIBUTI</title>
-<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608199408302">
+<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608226346790">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://tibuti.cn/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="众望TIBUTI | TIBUTI - Atom Feed" href="https://tibuti.cn/atom.xml">
@@ -24,7 +24,7 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
       <div class="main-content">
         <div class="site-header">
   <a href="https://tibuti.cn">
-  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1608199408302" alt="">
+  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1608226346790" alt="">
   </a>
   <h1 class="site-title">
     TIBUTI
@@ -99,10 +99,13 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
 <h2 id="t不t的-t">“T不T”的 T</h2>
 <h3 id="关于红肥绿瘦">关于红肥绿瘦</h3>
 <p><code><strong>Slogan:</strong> T否T否，应是红肥绿瘦。</code></p>
-<p><font color=blue>1.</font>红肥：股票大涨高卖低买（能挣多挣）</p>
-<p><font color=blue>2.</font>绿瘦：大幅回落提前预判（少亏为盈）</p>
+<p><font color=blue>1.</font>红肥：股票高卖低买（能挣多挣）</p>
+<p><font color=blue>2.</font>绿瘦：回落提前预判（少亏为盈）</p>
 <h3 id="做t与仓位">做T与仓位</h3>
 <p><font color=blue>1.</font>本策略原则上研究的是在不改变仓位情况下做T高卖低买实现利润最大化且收盘时<code><font color=blue>仓位不变</font></code>。</p>
+<p>做T包含两层意思：<br>
+<font color=blue>1.1</font> T一次：高位卖出，低位买回仓位</p>
+<p><font color=blue>1.2</font>T两次：低位买进，次高位卖出，再买进在第2高位卖出</p>
 <p>相对于其他人分享了个寂寞不同，Tibuti弱化讲量化的逻辑和计算，直接分享T+1量化分析结果。</p>
 <p>目前可实现的策略有T+1（日）、T+5（周），T+5是T+1的同规则延伸，只分享T+1是因为日内交易更能体现策略的灵敏性，T+5相对保守适用于大仓位。</p>
 <p><font color=blue>2.</font>既然可以通过绿瘦做到“大幅回落提前预判”，那能不能高卖后进行预判不恢复仓位好规避下一个交易日下跌？</p>
@@ -135,9 +138,9 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
 
 </code></pre>
 <p> <br>
-<strong><code>53.29%，是Tibuti策略目前相对稳定的准确率。</code></strong></p>
+<strong><code>55.77%，是Tibuti策略目前相对稳定的准确率。</code></strong></p>
 <p><font color=blue>1.</font>全部样本准确率：全部样本T+1最高价格误差率≤1.5%的准确率为<code><font color=blue>64.59%</font></code><br>
-<font color=blue>2.</font>清洗样本准确率：产生64.59%准确率的数据里包含了几百只主板振幅在1.5%以内的股票和明显被高估（涨幅超过了10%）的股票，清洗掉这部分数据后的平均准确率在53.29%。</p>
+<font color=blue>2.</font>清洗样本准确率：产生64.59%准确率的数据里包含了几百只主板振幅在1.5%以内的股票和明显被高估（涨幅超过了10%）的股票，清洗掉这部分数据后的平均准确率在55.77%。</p>
 <p> </p>
 <h3 id="浮动计算机制">浮动计算机制</h3>
 <p>拥有了稳定有效的量化分析策略能不能收割股市了？当然不能，其局限性体现在三个方面：</p>
@@ -222,6 +225,15 @@ var myChart = new Chart(ctx, data);
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://tibuti.cn/post/hello-gridea/">
+              <h3 class="post-title">
+                参考标准
+              </h3>
+            </a>
+          </div>
         
 
         
