@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>众望TIBUTI | TIBUTI</title>
-<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608227803764">
+<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608228250230">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://tibuti.cn/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="众望TIBUTI | TIBUTI - Atom Feed" href="https://tibuti.cn/atom.xml">
@@ -24,7 +24,7 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
       <div class="main-content">
         <div class="site-header">
   <a href="https://tibuti.cn">
-  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1608227803764" alt="">
+  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1608228250230" alt="">
   </a>
   <h1 class="site-title">
     TIBUTI
@@ -86,8 +86,7 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
 <p><code><strong>Tibuti.cn，全国首个敢面向市场公开量化结果的站点。</strong></p>
 <p>Tibuti（“t不t”）主要以量化分析方法来测算股票未来的<code><font color=blue>最高价格</font></code>，主张有预见、主见的做T增加盈利或提前规避大幅回撤。Tibuti策略实质就是围绕<code><font color=blue>振幅</font></code>进行的深度量化研究：</p>
 <h3 id="振幅">振幅</h3>
-<pre><code class="language-python">振幅 = （ 最高价 - 最低价 ） ÷  前一日收盘价
-</code></pre>
+<p>振幅 = （ 最高价 - 最低价 ） ÷  前一日收盘价</p>
 <p> </p>
 <h3 id="最高价格">最高价格</h3>
 <p>最高价格探索的是股票振幅日内可<code><font color=blue>T</font></code>空间，且对收盘结果持放任态度。</p>
@@ -114,29 +113,24 @@ Tibuti（“t不t”）主要以量化分析方法来测算股票未来的最高
 <h4 id="因小失大">因小失大</h4>
 <p>不论是基于何种交易思路做T都有T了后又大涨的情形，这在量化分析的逻辑里也无法完全避免，间接的避免方式如采取小仓位T，成功了皆大欢喜，失败了就失败了投资本就如此。</p>
 <p>出现测算最高价低于实际最高价格的原因是Tibuti的策略是按照同一规则无差别去计算A股全部股票，考虑到了共同性特征而没能兼顾个性特征，这就需要采纳策略的股民因势而为，自主考虑<code><font color=blue>滑点</font></code>。</p>
-<pre><code class="language-python">滑点 ：
-1. 结合个股认为Tibuti的测算价过低，那就执行：最高价×1.01
-2. 结合个股认为Tibuti的测算价过高，那就执行：最高价×0.99
-3. 或者直接在测算价上加价或减价
-</code></pre>
+<p>滑点 ：</p>
+<ol>
+<li>结合个股认为Tibuti的测算价过低，那就执行：最高价×1.01</li>
+<li>结合个股认为Tibuti的测算价过高，那就执行：最高价×0.99</li>
+<li>或者直接在测算价上加价或减价</li>
+</ol>
 <h4 id="鼓吹做t">鼓吹做T</h4>
 <p>做T势必增加交易成本，但是只考虑成本而忽略振幅范围内的高收益，难免颠倒了投资是追求更高收益的本质特征。我不鼓吹做T，我主张“有预见、有主见的T”，T一下最低能够实现2%的收益率就应认可为成功的T。<br>
  </p>
 <h2 id="评价标准">评价标准</h2>
 <h3 id="准确率标准机制">准确率标准机制</h3>
 <p>Tibuti策略评价标准，采用的是取<code><font color=blue>任意</font></code><code><font color=blue>93个交易日</font></code><code><font color=blue>无差别计算</font></code>A股所有股票的日最高价格与实际最高价格偏差<code><font color=blue>≤1.5%</font></code>的准确率。</p>
-<pre><code class="language-python">关键词解读：
-
-1.任意：既考虑随机93个交易日的偏差也考虑连续93个交易日的偏差
-
-2.交易日93个：在策略设计之初是为了量化分析月（31个交易日）整体趋势但是月波动太大稳定性不高
-后来进化到测算日最高价格时延用了31个交易日的思路并且认为3个周期的计算更稳定所以是93个交易日。
-
-3.无差别计算：所有计算过程都按照同一方式和逻辑进行，不区别对待或为某类型股票单独设立评价标准
-
-4.偏差≤1.5%：如果偏差大于1.5%还要追求做T3%的收益那振幅至少得保证4.5%，那参考价值就太低了
-
-</code></pre>
+<p>关键词解读：</p>
+<p>1.任意：既考虑随机93个交易日的偏差也考虑连续93个交易日的偏差</p>
+<p>2.交易日93个：在策略设计之初是为了量化分析月（31个交易日）整体趋势但是月波动太大稳定性不高<br>
+后来进化到测算日最高价格时延用了31个交易日的思路并且认为3个周期的计算更稳定所以是93个交易日。</p>
+<p>3.无差别计算：所有计算过程都按照同一方式和逻辑进行，不区别对待或为某类型股票单独设立评价标准</p>
+<p>4.偏差≤1.5%：如果偏差大于1.5%还要追求做T3%的收益那振幅至少得保证4.5%，那参考价值就太低了</p>
 <p> <br>
 <strong><code>55.77%，是Tibuti策略目前相对稳定的准确率。</code></strong></p>
 <p><font color=blue>1.</font>全部样本准确率：全部样本T+1最高价格误差率≤1.5%的准确率为<code><font color=blue>64.59%</font></code><br>
