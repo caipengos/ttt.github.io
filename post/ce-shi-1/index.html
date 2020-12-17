@@ -1,0 +1,462 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>测试1 | TIBUTI</title>
+<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1608199408302">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://tibuti.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="测试1 | TIBUTI - Atom Feed" href="https://tibuti.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+
+
+    
+    
+
+www.jb51.net JS搜索筛选table列
+
+
+function onSearch(obj){//js函数开始
+  setTimeout(function(){//因为是即时查询，需要用setTimeou..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://tibuti.cn">
+  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1608199408302" alt="">
+  </a>
+  <h1 class="site-title">
+    TIBUTI
+  </h1>
+  <p class="site-description">
+    T否T否，应是红肥绿瘦
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          ←
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              测试1
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-12-17
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>www.jb51.net JS搜索筛选table列</title>
+</head>
+<script type="text/javascript">
+function onSearch(obj){//js函数开始
+  setTimeout(function(){//因为是即时查询，需要用setTimeout进行延迟，让值写入到input内，再读取
+    var storeId = document.getElementById('store');//获取table的id标识
+    var rowsLength = storeId.rows.length;//表格总共有多少行
+    var key = obj.value;//获取输入框的值
+    var searchCol = 0;//要搜索的哪一列，这里是第一列，从0开始数起
+    for(var i=1;i<rowsLength;i++){//按表的行数进行循环，本例第一行是标题，所以i=1，从第二行开始筛选（从0数起）
+      var searchText = storeId.rows[i].cells[searchCol].innerHTML;//取得table行，列的值
+      if(searchText.match(key)){//用match函数进行筛选，如果input的值，即变量 key的值为空，返回的是ture，
+        storeId.rows[i].style.display='';//显示行操作，
+      }else{
+        storeId.rows[i].style.display='none';//隐藏行操作
+      }
+    }
+  },200);//200为延时时间
+}
+</script>
+<title>JS表格分页</title> 
+<script> 
+function Page(iAbsolute,sTableId,sTBodyId,page) 
+{ 
+    this.absolute = iAbsolute; //每页最大记录数 
+    this.tableId = sTableId; 
+    this.tBodyId = sTBodyId; 
+    this.rowCount = 0;//记录数 
+    this.pageCount = 0;//页数 
+    this.pageIndex = 0;//页索引 
+    this.__oTable__ = null;//表格引用 
+    this.__oTBody__ = null;//要分页内容 
+    this.__dataRows__ = 0;//记录行引用 
+    this.__oldTBody__ = null; 
+    this.__init__(); //初始化; 
+}; 
+/**//* 
+初始化 
+*/ 
+Page.prototype.__init__ = function(){ 
+this.__oTable__ = document.getElementById(this.tableId);//获取table引用 
+this.__oTBody__ = this.__oTable__.tBodies[this.tBodyId];//获取tBody引用 
+this.__dataRows__ = this.__oTBody__.rows; 
+this.rowCount = this.__dataRows__.length; 
+try{ 
+this.absolute = (this.absolute <= 0) || (this.absolute>this.rowCount) ? this.rowCount : this.absolute; 
+this.pageCount = parseInt(this.rowCount%this.absolute == 0 
+? this.rowCount/this.absolute : this.rowCount/this.absolute+1); 
+}catch(exception){} 
+this.__updateTableRows__(); 
+}; 
+Page.prototype.GetBar=function(obj) 
+{ 
+var bar= document.getElementById(obj.id); 
+bar.innerHTML= "每页"+this.absolute+"条/共"+this.rowCount+"条";// 第2页/共6页 首页 上一页 1 2 3 4 5 6 下一页 末页 
+} 
+/**//* 
+下一页 
+*/ 
+Page.prototype.nextPage = function(){ 
+if(this.pageIndex + 1 < this.pageCount){ 
+this.pageIndex += 1; 
+this.__updateTableRows__(); 
+} 
+}; 
+/**//* 
+上一页 
+*/ 
+Page.prototype.prePage = function(){ 
+if(this.pageIndex >= 1){ 
+this.pageIndex -= 1; 
+this.__updateTableRows__(); 
+} 
+}; 
+/**//* 
+首页 
+*/ 
+Page.prototype.firstPage = function(){ 
+if(this.pageIndex != 0){ 
+this.pageIndex = 0; 
+this.__updateTableRows__(); 
+} 
+}; 
+/**//* 
+尾页 
+*/ 
+Page.prototype.lastPage = function(){ 
+if(this.pageIndex+1 != this.pageCount){ 
+this.pageIndex = this.pageCount - 1; 
+this.__updateTableRows__(); 
+} 
+}; 
+/**//* 
+页定位方法 
+*/ 
+Page.prototype.aimPage = function(){ 
+var abc = document.getElementById("pageno"); 
+var iPageIndex = abc.value; 
+var iPageIndex = iPageIndex*1; 
+if(iPageIndex > this.pageCount-1){ 
+this.pageIndex = this.pageCount -1; 
+}else if(iPageIndex < 0){ 
+this.pageIndex = 0; 
+}else{ 
+this.pageIndex = iPageIndex-1; 
+} 
+this.__updateTableRows__(); 
+}; 
+/**//* 
+执行分页时，更新显示表格内容 
+*/ 
+Page.prototype.__updateTableRows__ = function(){ 
+var iCurrentRowCount = this.absolute * this.pageIndex; 
+var iMoreRow = this.absolute+iCurrentRowCount > this.rowCount ? this.absolute+iCurrentRowCount - this.rowCount : 0; 
+var tempRows = this.__cloneRows__(); 
+var removedTBody = this.__oTable__.removeChild(this.__oTBody__); 
+var newTBody = document.createElement("TBODY"); 
+newTBody.setAttribute("id", this.tBodyId); 
+for(var i=iCurrentRowCount; i < this.absolute+iCurrentRowCount-iMoreRow; i++){ 
+newTBody.appendChild(tempRows[i]); 
+} 
+this.__oTable__.appendChild(newTBody); 
+this.__dataRows__ = tempRows; 
+this.__oTBody__ = newTBody; 
+//页脚显示分 
+var divFood = document.getElementById("divFood");//分页工具栏 
+divFood.innerHTML=""; 
+var rightBar = document.createElement("divFood"); 
+rightBar.setAttribute("display",""); 
+rightBar.setAttribute("float","left"); 
+rightBar.innerHTML="第"+(this.pageIndex+1)+"页/共"+this.pageCount+"页"; 
+var isOK="Y"; 
+var cssColor=""; 
+divFood.appendChild(rightBar); 
+////页脚显示分页结 
+}; 
+/**//* 
+克隆原始操作行集合 
+*/ 
+Page.prototype.__cloneRows__ = function(){ 
+var tempRows = []; 
+for(var i=0; i<this.__dataRows__.length; i++){ 
+tempRows[i] = this.__dataRows__[i].cloneNode(1); 
+} 
+return tempRows; 
+}; 
+</script> 
+<script type="text/javascript" language="javascript"> 
+window.onload = function(){ 
+page = new Page(3,'senfe','group_one'); }; 
+</script> 
+<style type="text/css"><!-- 
+#senfe { 
+border-top: #000 1px solid; 
+border-left: #000 1px solid; 
+} 
+#senfe td { 
+border-right: #000 1px solid; 
+border-bottom: #000 1px solid; 
+} 
+--></style> 
+<script language="javascript">
+//改表格颜色
+<!-- 
+// function senfe(o,a,b,c,d){ 
+// var t=document.getElementById(o).getElementsByTagName("tr"); 
+// for(var i=0;i<t.length;i++){ 
+// t[i].style.backgroundColor=(t[i].sectionRowIndex%2==0)?a:b; 
+// } 
+// } 
+-->
+</script> 
+</head> 
+<body> 
+<div> 
+<table border="0" cellpadding="0" cellspacing="0" bordercolor="#006600" id="senfe"> 
+<thead> 
+<tr align="center" valign="middle"> 
+<td width="46" height="23" bgcolor="#FFFFFF">编号</td> 
+<td width="71" bgcolor="#FFFFFF"><select name="select" dir="ltr"> 
+<option>套类别</option> 
+<option>A套</option> 
+<option>B套</option> 
+</select></td> 
+<td width="53" bgcolor="#FFFFFF">名称</td> 
+<td width="53" bgcolor="#FFFFFF">数量</td> 
+<td width="53" bgcolor="#FFFFFF">单价</td> 
+<td width="95" bgcolor="#FFFFFF"><select name="select" dir="ltr"> 
+<option>单位</option> 
+<option>个</option> 
+<option>双</option> 
+</select></td> 
+<td width="80" bgcolor="#FFFFFF">酒店名称</td> 
+<td width="35" bgcolor="#FFFFFF">备注</td> 
+</tr> 
+</thead> 
+<tbody id="group_one"> 
+<tr> 
+<td>1</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>2</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>3</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>4</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>5</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>6</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>7</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>8</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+<tr> 
+<td>9</td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+<td> </td> 
+</tr> 
+</tbody> 
+</table> 
+<script language="javascript"><!-- 
+//senfe("表格名称","奇数行背景","偶数行背景","鼠标经过背景","点击后背景"); 
+senfe("senfe","#fff","#ccc","#cfc","#f00"); 
+--></script> 
+</div> 
+<div><a href="#" onclick="page.firstPage();">首 页</a>/<a href="#" onclick="page.nextPage();">下一页</a>/<a href="#" onclick="page.prePage();">上一页</a>/<a href="#" onclick="page.lastPage();">末 页</a><span id="divFood"> 
+</span> 
+/第 
+<input id="pageno" value="1" style="width:20px"/>页/<a href="#" onclick="page.aimPage();">跳转</a></div> 
+</div> 
+</div> 
+</body> 
+</html>
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://tibuti.cn/post/09090/">
+              <h3 class="post-title">
+                09090
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+        <!--<a class="rss" href="https://tibuti.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>-->
+</div>
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

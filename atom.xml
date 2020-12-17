@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2020-12-16T17:59:01.911Z</updated>
+    <updated>2020-12-17T10:03:31.023Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -11,41 +11,11 @@
     <icon>https://tibuti.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, TIBUTI</rights>
     <entry>
-        <title type="html"><![CDATA[012]]></title>
-        <id>https://tibuti.cn/post/012/</id>
-        <link href="https://tibuti.cn/post/012/">
+        <title type="html"><![CDATA[011]]></title>
+        <id>https://tibuti.cn/post/011/</id>
+        <link href="https://tibuti.cn/post/011/">
         </link>
-        <updated>2020-12-16T17:47:57.000Z</updated>
-        <content type="html"><![CDATA[<html>
-<head>
-<title>带有分页排序功能的表格</title>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/slimtable.min.js"></script>
-<script type="text/javascript" src="js/myjs.js"></script>
-<link rel="stylesheet" href="css/slimtable.css">
-<link rel="stylesheet" href="css/site.css">
-</head>
-<body>
-<br/>
-<input id="startDate" type="text" value="2000-01-10 00:00:12"/>
-<br/>
-<input id='endDate' type='text' value="2017-01-10 00:00:12" />
-<input id="search" type="button" value="查询"/>
-<br/>
-<table id="exampletable">
-<thead id="thead1">
-<tr>
-<th>序号</th>
-<th>型号</th>
-<th>批次</th>
-<th>任务系列号</th>
-<th>工艺文件编号</th>
-<th>时间</th>
-</tr>
-</thead>
-<tbody id="tbody1"></tbody>
-</table>
-</body>
-</html>]]></content>
+        <updated>2020-12-16T19:20:08.000Z</updated>
+        <content type="html"><![CDATA[<iframe width="100%" height="300" src="https://c.runoob.com/iframe/2439" allowfullscreen="allowfullscreen" frameborder="0"></iframe>]]></content>
     </entry>
 </feed>
