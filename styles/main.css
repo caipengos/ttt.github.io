@@ -1003,6 +1003,10 @@ td {
   font-weight: bold;
 }
 
+      .main {
+        max-width: 850px;
+      }
+    
       .post-container .post .post-title {
         text-align: center;
       }
@@ -1031,4 +1035,10 @@ td {
       a:hover {
         color: #eb3223;
       }
+    
+      div i{
+  display:inline-block;
+  /*padding-left: 100%;*/
+  width:100%;
+}
     
