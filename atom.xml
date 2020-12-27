@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2020-12-27T19:18:31.232Z</updated>
+    <updated>2020-12-27T19:19:25.159Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -11,33 +11,619 @@
     <icon>https://tibuti.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, TIBUTI</rights>
     <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://tibuti.cn/post/ce-shi/</id>
-        <link href="https://tibuti.cn/post/ce-shi/">
+        <title type="html"><![CDATA[折叠]]></title>
+        <id>https://tibuti.cn/post/zhe-die/</id>
+        <link href="https://tibuti.cn/post/zhe-die/">
         </link>
-        <updated>2020-12-27T18:56:21.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>[目录]</strong><br>
-<a href="#p1"><font size=2 color=#00f>1、11111111111111</font></a><br>
-<a href="#p2"><font size=2 color=#00f>2、222222222222</font></a><br>
-<a href="#p3"><font size=2 color=#00f>3、33333333333</font></a><br>
-<a href="#p4"><font size=2 color=#00f>4、444444444</font></a></p>
-<h2 id="a-idp11-11111111111111a"><a id="p1">1、11111111111111</a></h2>
-<p>11111111111111111111111111111111111111111111111111111111<br>
-11111111111111111111111111111111111111111111111111111111<br>
-11111111111111111111111111111111111111111111111111111111</p>
-<h2 id="a-idp22-222222222222a"><a id="p2">2、222222222222</a></h2>
-<p>2、2222222222222、2222222222222、2222222222222、2222222222222、2222222222222、2222222222222、222222222222<br>
-2、2222222222222、2222222222222、2222222222222、222222222222</p>
-<h2 id="a-idp33-3333333333333333a"><a id="p3">3、3333333333333333</a></h2>
-<p>3、3333333333333333333333、3333333333333333333333、333333333333333333333<br>
-3、3333333333333333333333、333333333333333333333<br>
-3、3333333333333333333333、333333333333333333333<br>
-3、333333333333333333333</p>
-<h2 id="a-idp44-4444444444a"><a id="p4">4、4444444444</a></h2>
-<p>4、44444444444、44444444444、44444444444、44444444444、4444444444<br>
-4、44444444444、44444444444、4444444444<br>
-4、44444444444、44444444444、44444444444、4444444444<br>
-4、44444444444、44444444444、4444444444</p>
+        <updated>2020-12-12T12:21:55.000Z</updated>
+        <content type="html"><![CDATA[<table ><tbody ><tr></tr><tr><td><details ><summary><sub><b>Click to see more:</b></sub><h6> Given the following python code </h6>
+<pre><code class="language-python">from pychartjs import BaseChart
+class myChart(BaseChart):
+    pass
+chartJSON = myChart().get()
+</code></pre>
+</summary><hr>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TIBUTI</title>
+</head>
+<script type="text/javascript">
+function onSearch(obj){//js函数开始
+  setTimeout(function(){//因为是即时查询，需要用setTimeout进行延迟，让值写入到input内，再读取
+    var storeId = document.getElementById('store');//获取table的id标识
+    var rowsLength = storeId.rows.length;//表格总共有多少行
+    var key = obj.value;//获取输入框的值
+    var searchCol = 0;//要搜索的哪一列，这里是第一列，从0开始数起
+    for(var i=1;i<rowsLength;i++){//按表的行数进行循环，本例第一行是标题，所以i=1，从第二行开始筛选（从0数起）
+      var searchText = storeId.rows[i].cells[searchCol].innerHTML;//取得table行，列的值
+      if(searchText.match(key)){//用match函数进行筛选，如果input的值，即变量 key的值为空，返回的是ture，
+        storeId.rows[i].style.display='2';//显示行操作，
+      }else{
+        storeId.rows[i].style.display='';//隐藏行操作
+      }
+    }
+  },200);//200为延时时间
+}
+</script>
+<body>
+<div > <input name="key" type="text" id="key" onkeydown="onSearch(this)" value="" /></div>
+<table width="850" border="100" id="store"><!-- id与函数的getId一致 -->
+ <tr bgcolor="#CCCCCC">
+  <td>日期</td>
+  <td>股票代码 </td>
+  <td>收盘价 </td>
+  <td>估1 </td>
+  <td>估2</td>
+ </tr>
+  <td>sh.600196</td>
+        <td>2020/8/17</td>
+        <td>60.14</td>
+        <td>57.38</td>
+        <td>59.01</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/8/18</td>
+        <td>60.48</td>
+        <td>57.88</td>
+        <td>58.9</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/8/19</td>
+        <td>58</td>
+        <td>54.11</td>
+        <td>58</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/8/20</td>
+        <td>55.57</td>
+        <td>53.35</td>
+        <td>53.8</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/8/21</td>
+        <td>55.48</td>
+        <td>53</td>
+        <td>54.99</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/8/24</td>
+        <td>54.65</td>
+        <td>52.52</td>
+        <td>54.03</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/8/25</td>
+        <td>54.6</td>
+        <td>52.82</td>
+        <td>54.41</td>
+    </tr>
+    <tr>
+        <td>sh.600197</td>
+        <td>2020/8/26</td>
+        <td>55.06</td>
+        <td>53.06</td>
+        <td>53.5</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/8/27</td>
+        <td>52.99</td>
+        <td>50.88</td>
+        <td>52.83</td>
+    </tr>
+    <tr>
+        <td>sh.600198</td>
+        <td>2020/8/28</td>
+        <td>56.59</td>
+        <td>52.96</td>
+        <td>53.88</td>
+    </tr>
+    <tr>
+        <td>sh.600199</td>
+        <td>2020/8/31</td>
+        <td>56.25</td>
+        <td>54.5</td>
+        <td>56.23</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/1</td>
+        <td>54.61</td>
+        <td>52.9</td>
+        <td>54</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/2</td>
+        <td>54.34</td>
+        <td>53.18</td>
+        <td>53.5</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/3</td>
+        <td>54.28</td>
+        <td>52.71</td>
+        <td>53.7</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/4</td>
+        <td>53</td>
+        <td>51</td>
+        <td>51.01</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/7</td>
+        <td>52.56</td>
+        <td>49.78</td>
+        <td>52.56</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/8</td>
+        <td>51.07</td>
+        <td>49.58</td>
+        <td>50.61</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/9</td>
+        <td>49.69</td>
+        <td>48.11</td>
+        <td>49.68</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/10</td>
+        <td>49.88</td>
+        <td>48.4</td>
+        <td>49.3</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/11</td>
+        <td>49.37</td>
+        <td>48.21</td>
+        <td>48.6</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/14</td>
+        <td>49.25</td>
+        <td>47.25</td>
+        <td>48.66</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/15</td>
+        <td>50.3</td>
+        <td>47.33</td>
+        <td>47.99</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/16</td>
+        <td>49.38</td>
+        <td>46.9</td>
+        <td>49.35</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/17</td>
+        <td>47.26</td>
+        <td>45.89</td>
+        <td>46.71</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/18</td>
+        <td>48.09</td>
+        <td>46.61</td>
+        <td>46.77</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/21</td>
+        <td>48.7</td>
+        <td>47.04</td>
+        <td>47.8</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/22</td>
+        <td>49.6</td>
+        <td>47.5</td>
+        <td>47.67</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/23</td>
+        <td>52.42</td>
+        <td>47.6</td>
+        <td>48.42</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/24</td>
+        <td>52.47</td>
+        <td>50.34</td>
+        <td>51</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/25</td>
+        <td>53.79</td>
+        <td>50.92</td>
+        <td>51.05</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/28</td>
+        <td>52.95</td>
+        <td>50.24</td>
+        <td>52.3</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/29</td>
+        <td>50.43</td>
+        <td>48.81</td>
+        <td>50.29</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/9/30</td>
+        <td>50.55</td>
+        <td>48.93</td>
+        <td>50.1</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/9</td>
+        <td>54.02</td>
+        <td>50.65</td>
+        <td>51.52</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/12</td>
+        <td>55.95</td>
+        <td>54.17</td>
+        <td>55.41</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/13</td>
+        <td>60.59</td>
+        <td>54.4</td>
+        <td>55.34</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/14</td>
+        <td>62.5</td>
+        <td>57.66</td>
+        <td>58.9</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/15</td>
+        <td>61.06</td>
+        <td>57.52</td>
+        <td>58.8</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/16</td>
+        <td>62.2</td>
+        <td>59.5</td>
+        <td>59.7</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/19</td>
+        <td>62.5</td>
+        <td>58.02</td>
+        <td>61.99</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/20</td>
+        <td>59.27</td>
+        <td>57.6</td>
+        <td>58.06</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/21</td>
+        <td>61.35</td>
+        <td>58.75</td>
+        <td>59.2</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/22</td>
+        <td>57.5</td>
+        <td>55.33</td>
+        <td>57.5</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/23</td>
+        <td>56.3</td>
+        <td>52.08</td>
+        <td>55.76</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/26</td>
+        <td>54.2</td>
+        <td>52.25</td>
+        <td>52.8</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/27</td>
+        <td>53.8</td>
+        <td>52</td>
+        <td>52.2</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/28</td>
+        <td>53.78</td>
+        <td>52.08</td>
+        <td>53.6</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/29</td>
+        <td>56.06</td>
+        <td>51.96</td>
+        <td>52.06</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/10/30</td>
+        <td>57.01</td>
+        <td>53.8</td>
+        <td>57.01</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/2</td>
+        <td>54.88</td>
+        <td>52</td>
+        <td>54.61</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/3</td>
+        <td>54.44</td>
+        <td>52.18</td>
+        <td>53.08</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/4</td>
+        <td>53.92</td>
+        <td>52.61</td>
+        <td>53.7</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/5</td>
+        <td>53.91</td>
+        <td>52.39</td>
+        <td>53.5</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/6</td>
+        <td>52.45</td>
+        <td>48.88</td>
+        <td>52.44</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/9</td>
+        <td>52.15</td>
+        <td>49.55</td>
+        <td>49.75</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/10</td>
+        <td>56.66</td>
+        <td>55.68</td>
+        <td>56.66</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/11</td>
+        <td>60.2</td>
+        <td>52.83</td>
+        <td>56.66</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/12</td>
+        <td>61</td>
+        <td>56</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/13</td>
+        <td>58.5</td>
+        <td>56.35</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/16</td>
+        <td>59.39</td>
+        <td>57</td>
+        <td>58.35</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/17</td>
+        <td>55.3</td>
+        <td>52.95</td>
+        <td>55</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/18</td>
+        <td>53.3</td>
+        <td>51.15</td>
+        <td>53.3</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/19</td>
+        <td>52.96</td>
+        <td>51.7</td>
+        <td>52.08</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/20</td>
+        <td>52.95</td>
+        <td>51.7</td>
+        <td>52.6</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/23</td>
+        <td>54.94</td>
+        <td>52.82</td>
+        <td>53.2</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/24</td>
+        <td>54.17</td>
+        <td>52.81</td>
+        <td>54</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/25</td>
+        <td>54.22</td>
+        <td>51.55</td>
+        <td>52.5</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/26</td>
+        <td>52.35</td>
+        <td>51.3</td>
+        <td>51.3</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/27</td>
+        <td>51.85</td>
+        <td>50.6</td>
+        <td>51.5</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/11/30</td>
+        <td>52</td>
+        <td>50.97</td>
+        <td>51.49</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/1</td>
+        <td>53.45</td>
+        <td>52.15</td>
+        <td>52.55</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/2</td>
+        <td>53.15</td>
+        <td>51.82</td>
+        <td>53.03</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/3</td>
+        <td>55.52</td>
+        <td>53.01</td>
+        <td>53.26</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/4</td>
+        <td>55.8</td>
+        <td>54</td>
+        <td>54.27</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/7</td>
+        <td>54.79</td>
+        <td>53.8</td>
+        <td>54.5</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/8</td>
+        <td>54.78</td>
+        <td>53.42</td>
+        <td>54.15</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/9</td>
+        <td>55.55</td>
+        <td>53.21</td>
+        <td>53.8</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/10</td>
+        <td>55.27</td>
+        <td>53.61</td>
+        <td>54</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/11</td>
+        <td>57.37</td>
+        <td>54.03</td>
+        <td>54.83</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/14</td>
+        <td>58</td>
+        <td>55.66</td>
+        <td>57.65</td>
+    </tr>
+    <tr>
+        <td>sh.600196</td>
+        <td>2020/12/15</td>
+        <td>56.1</td>
+        <td>54.51</td>
+        <td>54.8</td>
+    </tr>
+</table>
+</details></td></tr></tbody>
+</table>
 ]]></content>
     </entry>
 </feed>
