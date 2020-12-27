@@ -1020,11 +1020,15 @@ td {
         font-family: Georgia, serif;
       }
     
+      body {
+        color: #343a40;
+      }
+    
       a {
         color: #343a40;
       }
     
       a:hover {
-        color: #fa5252;
+        color: #eb3223;
       }
     
