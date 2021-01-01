@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2021-01-01T19:49:04.590Z</updated>
+    <updated>2021-01-01T19:56:20.973Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -17,8 +17,9 @@
         </link>
         <updated>2021-01-01T19:34:41.000Z</updated>
         <content type="html"><![CDATA[<!--div比table大小要小才会显示-->
- <div style="overflow-x: auto; overflow-y: auto; height: 8500px; width:500px;">
+ <div style="overflow-x: auto; overflow-y: auto; height: 8500px; width:600px;">
   <tbody>
+<p>日期</p>
 <head>
 </head>
 <script type="text/javascript">
@@ -42,11 +43,10 @@ function onSearch(obj){//js函数开始
 <body>
 <div > <input name="key" type="text" id="key" onkeydown="onSearch(this)" value="" /></
 div>
-<div style="overflow-x: auto; overflow-y: auto; height: 850px; width:500px;">
-<table width="850" height="100" id="store"><!-- id与函数的getId一致 -->
+<div style="overflow-x: auto; overflow-y: auto; height: 850px; width:850px;">
+<table width="850" height="200" id="store"><!-- id与函数的getId一致 -->
  <tr bgcolor="#CCCCCC">
-  <td>日期</td>
-  <td>股票代码 </td>
+  <td>股票</td>
   <td>收盘价 </td>
   <td>序列1 </td>
   <td>序列2</td>
