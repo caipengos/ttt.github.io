@@ -2,30 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2020-12-27T19:19:25.159Z</updated>
+    <updated>2021-01-01T19:47:53.012Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
     <subtitle>T否T否，应是红肥绿瘦</subtitle>
     <logo>https://tibuti.cn/images/avatar.png</logo>
     <icon>https://tibuti.cn/favicon.ico</icon>
-    <rights>All rights reserved 2020, TIBUTI</rights>
+    <rights>All rights reserved 2021, TIBUTI</rights>
     <entry>
-        <title type="html"><![CDATA[折叠]]></title>
-        <id>https://tibuti.cn/post/zhe-die/</id>
-        <link href="https://tibuti.cn/post/zhe-die/">
+        <title type="html"><![CDATA[测试i]]></title>
+        <id>https://tibuti.cn/post/ce-shi-i/</id>
+        <link href="https://tibuti.cn/post/ce-shi-i/">
         </link>
-        <updated>2020-12-12T12:21:55.000Z</updated>
-        <content type="html"><![CDATA[<table ><tbody ><tr></tr><tr><td><details ><summary><sub><b>Click to see more:</b></sub><h6> Given the following python code </h6>
-<pre><code class="language-python">from pychartjs import BaseChart
-class myChart(BaseChart):
-    pass
-chartJSON = myChart().get()
-</code></pre>
-</summary><hr>
+        <updated>2021-01-01T19:34:41.000Z</updated>
+        <content type="html"><![CDATA[<!--div比table大小要小才会显示-->
+ <div style="overflow-x: auto; overflow-y: auto; height: 8500px; width:500px;">
+  <tbody>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TIBUTI</title>
 </head>
 <script type="text/javascript">
 function onSearch(obj){//js函数开始
@@ -37,17 +31,19 @@ function onSearch(obj){//js函数开始
     for(var i=1;i<rowsLength;i++){//按表的行数进行循环，本例第一行是标题，所以i=1，从第二行开始筛选（从0数起）
       var searchText = storeId.rows[i].cells[searchCol].innerHTML;//取得table行，列的值
       if(searchText.match(key)){//用match函数进行筛选，如果input的值，即变量 key的值为空，返回的是ture，
-        storeId.rows[i].style.display='2';//显示行操作，
+        storeId.rows[i].style.display='';//显示行操作，
       }else{
-        storeId.rows[i].style.display='';//隐藏行操作
+        storeId.rows[i].style.display='none';//隐藏行操作
       }
     }
   },200);//200为延时时间
 }
 </script>
 <body>
-<div > <input name="key" type="text" id="key" onkeydown="onSearch(this)" value="" /></div>
-<table width="850" border="100" id="store"><!-- id与函数的getId一致 -->
+<div > <input name="key" type="text" id="key" onkeydown="onSearch(this)" value="" /></
+div>
+<div style="overflow-x: auto; overflow-y: auto; height: 850px; width:500px;">
+<table width="850" height="100" id="store"><!-- id与函数的getId一致 -->
  <tr bgcolor="#CCCCCC">
   <td>日期</td>
   <td>股票代码 </td>
@@ -622,8 +618,10 @@ function onSearch(obj){//js函数开始
         <td>54.8</td>
     </tr>
 </table>
-</details></td></tr></tbody>
-</table>
+  </tbody>
+ </table>
+  </body>
+  </div>
 ]]></content>
     </entry>
 </feed>
