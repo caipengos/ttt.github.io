@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2021-01-01T19:47:53.012Z</updated>
+    <updated>2021-01-01T19:49:04.590Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -48,8 +48,10 @@ div>
   <td>日期</td>
   <td>股票代码 </td>
   <td>收盘价 </td>
-  <td>估1 </td>
-  <td>估2</td>
+  <td>序列1 </td>
+  <td>序列2</td>
+  <td>序列3</td>
+  <td>序列4</td>
  </tr>
   <td>sh.600196</td>
         <td>2020/8/17</td>
