@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2021-01-02T16:56:11.521Z</updated>
+    <updated>2021-01-02T17:05:02.318Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -16,13 +16,10 @@
         <link href="https://tibuti.cn/post/about/">
         </link>
         <updated>2021-01-02T21:09:48.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://tibuti.cn/post-images/1609092760726.gif" alt="" loading="lazy"></figure>
-<h2 id="一-关于">一、关于</h2>
+        <content type="html"><![CDATA[<h2 id="一-关于">一、关于</h2>
 <p><font  color=red size=3.8><strong>Tibuti.cn，全国首个敢面向市场公开量化结果的站点。</strong></font></p>
 <p>Tibuti（称TBT）追求以量化分析方法来测算股票未来的<code><font color=blue>最高价格和趋势</font></code>，主张<code><font color=blue>不改变仓位</font></code>有预见的做T增加超额收益或提前规避大幅回撤。</p>
-<p>最高价格测算本质上是为了体现概率性最大、可能性最集中的事件，寄希望于历史会重演。<br>
-<img src="https://tibuti.cn/post-images/1609592625832.gif" alt="" loading="lazy"></p>
+<p>最高价格测算本质上是为了体现概率性最大、可能性最集中的事件，寄希望于历史会重演。</p>
 <h3 id="策略优势">策略优势</h3>
 <p><font color=blue>1.</font> <strong>价格序列</strong> 计算出的日内最高点和趋势中的买卖点均以具体的价格为参考，属于真正意义上的数据科学，是非对错一验就明。</p>
 <p><font color=blue>2.</font>  <strong>以一应百</strong> 真理的本质是要有可复制性，TBT同一模型可同时测算所有股票，拒绝做事后诸葛。</p>
@@ -89,7 +86,7 @@
 <img src="https://tibuti.cn/post-images/1609603625296.gif" alt="" loading="lazy"></p>
 <p><font color=blue>3.</font>没有未来函数</p>
 <h2 id="五-最后">五、最后</h2>
-<figure data-type="image" tabindex="2"><img src="https://tibuti.cn/post-images/1608397211633.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://tibuti.cn/post-images/1608397211633.png" alt="" loading="lazy"></figure>
 <p>Tibuti.cn是<code><font color=blue>一个人</font></code>的独立量化分析展示站点，环境和能力受限制于方方面面。在乐于分享的同时仍需强调几个很关键的问题：</p>
 <p><font color=blue>1.</font>分享：对不收费、不推票、不建群、不开课、不卖软件作保证，对信息提供的及时性、出错发生不作保证。</p>
 <p><font color=blue>2.</font>收入：只接受非交流前的打赏与捐赠，为了感谢打赏金额排名靠前的TBT可提供无固定期限的咨询（第3条除外），金额可以是多次累计排名靠前的标准取决于我那一刻的想法。</p>
@@ -97,7 +94,7 @@
 <p><strong>打赏和捐赠支持100元以上7天无理由退款</strong></p>
 <p><strong>本站点所示仅供参考，不作为投资者交易的依据，投资者据此操作风险自担。</strong></p>
 <hr>
-<figure data-type="image" tabindex="3"><img src="https://tibuti.cn/post-images/1609605715821.gif" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://tibuti.cn/post-images/1609605715821.gif" alt="" loading="lazy"></figure>
 <h4 id="联系">联系</h4>
 <p>邮箱：ortis#qq.com（把#换为@）</p>
 ]]></content>
