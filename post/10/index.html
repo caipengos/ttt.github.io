@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>10 | TIBUTI</title>
+<link rel="shortcut icon" href="https://tibuti.cn/favicon.ico?v=1609605756797">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://tibuti.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="10 | TIBUTI - Atom Feed" href="https://tibuti.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+.td{width:50px;overflow:hidden}
+
+
+
+
+
+
+
+
+
+三、失误避险
+不论是基于何种交易分析法做T都有T飞了的风险，这在量化分析的逻辑里也无法避免。出现测算最高价低于实际最高价格的原因除了市场波动难测之外TBT的..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://tibuti.cn">
+  <img class="avatar" src="https://tibuti.cn/images/avatar.png?v=1609605756797" alt="">
+  </a>
+  <h1 class="site-title">
+    TIBUTI
+  </h1>
+  <p class="site-description">
+    T否T否，应是红肥绿瘦
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          ←
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              10
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-01-02
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <style>
+.td{width:50px;overflow:hidden}
+</style>
+<table width="100">
+<tr>
+<td class="td"></td>
+<td class="td"></td>
+<td class="td"></td>
+<td class="td"></td>
+</tr>
+<table>
+<h2 id="a-idp3三-失误避险a"><a id="p3">三、失误避险</a></h2>
+<p>不论是基于何种交易分析法做T都有T飞了的风险，这在量化分析的逻辑里也无法避免。出现测算最高价低于实际最高价格的原因除了市场波动难测之外TBT的策略是按照同一规则无差别去计算A股全部股票，考虑到了共同性特征而没能兼顾个性特征，这就需要因势而为自主考虑<code><font color=blue>第一序列滑点</font></code>。</p>
+<p>第一序列滑点系数1% ：<br>
+<font color=blue>1.</font>结合个股认为Tibuti的测算价过低，执行：最高价×1.01<br>
+<font color=blue>2.</font>结合个股认为Tibuti的测算价过高，执行：最高价×0.99<br>
+<font color=blue>3.</font>或者直接在测算价上加价或减价</p>
+<p>偏差1.5%和滑点系数1%的区别：偏差1.5%是在分析策略准确率时设的评价范围用于判断策略的可靠度，滑点1%是避免误测错过时机。1%的滑点本身就在1.5%的偏差内，建议参考自主决定。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#a-idp3%E4%B8%89-%E5%A4%B1%E8%AF%AF%E9%81%BF%E9%99%A9a"><a id="p3">三、失误避险</a></a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+        <!--<a class="rss" href="https://tibuti.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>-->
+</div>
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
