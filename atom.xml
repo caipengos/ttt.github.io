@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2021-01-03T19:39:57.282Z</updated>
+    <updated>2021-01-03T19:49:05.087Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -72,7 +72,8 @@
 <h3 id="机器学习">机器学习</h3>
 <p>为了适应股市的变化，TBT加入了机器学习(AutoML）和神经科学的方法。通过对量化因子和计算参数的实时调整以确保最高价格测算的准确率。</p>
 <h2 id="四-趋势判断">四、趋势判断</h2>
-<p>TBT以复星医药1999年至2021年共22年5143个交易日的测算数据为样本进行一些说明。随机找了一段波动较大的趋势，我们看下在趋势中TBT策略的买卖点提示表现如何。如果想检验次日最高点准不准，需要先阅读下一篇文章介绍的参照方法。</p>
+<p>TBT以复星医药1999年至2021年共22年5143个交易日的测算数据为样本进行一些说明。随机找了一段波动较大的趋势，我们看下在趋势中TBT策略的买卖点提示表现如何。</p>
+<p>📈<a href="https://pan.baidu.com/s/1R9TXTtEP2V9xHtqGRDJnQA">复星医药22年数据下载</a> 提取码: t21v</p>
 <p>图为复星医药2019年5月16日至2019年12月13日共145个交易日<br>
 <img src="https://tibuti.cn/post-images/1609614429482.gif" alt="" loading="lazy"></p>
 <p>为了让图看起来有科技感我故意搞的很复杂，其实理解起来很简单：<br>
