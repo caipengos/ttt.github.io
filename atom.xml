@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
     <title>TIBUTI</title>
-    <updated>2021-01-02T17:05:02.318Z</updated>
+    <updated>2021-01-03T19:39:57.282Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://tibuti.cn/favicon.ico</icon>
     <rights>All rights reserved 2021, TIBUTI</rights>
     <entry>
-        <title type="html"><![CDATA[众望TIBUTI]]></title>
+        <title type="html"><![CDATA[TIBUTI]]></title>
         <id>https://tibuti.cn/post/about/</id>
         <link href="https://tibuti.cn/post/about/">
         </link>
@@ -21,12 +21,13 @@
 <p>Tibuti（称TBT）追求以量化分析方法来测算股票未来的<code><font color=blue>最高价格和趋势</font></code>，主张<code><font color=blue>不改变仓位</font></code>有预见的做T增加超额收益或提前规避大幅回撤。</p>
 <p>最高价格测算本质上是为了体现概率性最大、可能性最集中的事件，寄希望于历史会重演。</p>
 <h3 id="策略优势">策略优势</h3>
-<p><font color=blue>1.</font> <strong>价格序列</strong> 计算出的日内最高点和趋势中的买卖点均以具体的价格为参考，属于真正意义上的数据科学，是非对错一验就明。</p>
+<p>如果说量化分析股票逃不掉个骗字，<br>
+<font color=blue>1.</font> <strong>价格序列</strong> 计算出的次日股价最高点和趋势中的买卖点均以具体的价格为参考，属于真正意义上的数据科学，是非对错一验就明。</p>
 <p><font color=blue>2.</font>  <strong>以一应百</strong> 真理的本质是要有可复制性，TBT同一模型可同时测算所有股票，拒绝做事后诸葛。</p>
 <p><font color=blue>3.</font> <strong>由点到面</strong> 既能测算下个交易日的最高价格也能根据这个价格判断未来趋势。</p>
-<p><font color=blue>4.</font> <strong>早一步知道</strong> 能够根据收盘情况测算明天的最高价格，砍掉焦虑。</p>
+<p><font color=blue>4.</font> <strong>早一步知道</strong> 能够根据收盘情况测算次日股票的最高价格。</p>
 <p>大A十年如一日值得诟病的有很多，如果套用一下冯小刚“垃圾观众造就垃圾电影”的角度来看，十年前人人相传的炒股“经验”和十年后的炒股“经验”有不一样吗？妄把经验当技术，经验上升不到科学，投资就只能算是投机，逃不过大鱼吃小鱼小鱼吃虾米的规则很正常。</p>
-<p><strong>卡韭菜脖子的不是经验不是理念，是手段。</strong></p>
+<p><strong>卡韭菜脖子的不是经验不是理论，是手段。</strong></p>
 <h3 id="类似分析策略">类似分析策略</h3>
 <p>TBT与美国技术分析师汤姆-狄马克的TD序列（同花顺叫“神器九转”）功能上几近相似但是又存在显著差异，若还有其他类似甚至不如其他的请原谅我知识的局限。</p>
 <p>TD序列的核心逻辑：当连续出现九根K线，并且这些K线的收盘价都比各自前面的第四根K线的收盘价高（低）时，形成TD买出（入）信号。必须是连续九根K线，如果出现中断就必须重新开始。<br>
@@ -43,7 +44,7 @@
 <p>二者存在差异的根本原因是TD序列以价格为基础进行<code><font color=blue>计次</font></code>，9步任意一步不满足策略就失效。TBT是以价格为基础进行算法<code><font color=blue>计算</font></code>。</p>
 <h2 id="二-最高价格测算">二、最高价格测算</h2>
 <p>交易员们普遍的一个痛点：“要是t一下再买回来就完美了，昨天想跑的没跑现在被t了”</p>
-<h4 id="切入点">切入点</h4>
+<h3 id="切入点">切入点</h3>
 <p>提醒：以下手绘图用于表达思考的角度与实际存在偏差。<br>
 <img src="https://tibuti.cn/post-images/1608400981827.gif" alt="" loading="lazy"></p>
 <p>这几个形态有一个共同特点：不管是低开还是高开都会出现至少一次<code><font color=blue>正向</font></code>最高点。</p>
@@ -52,7 +53,7 @@
 <img src="https://tibuti.cn/post-images/1608401889429.gif" alt="" loading="lazy"></p>
 <p>于是找到它们的临界点：<code><font color=blue>0</font></code>，等于0的情形不用考虑（如停牌）</p>
 <p>是不是看起来很韭菜的想法？像“1+1为什么等于2”一样，量化分析最初的切入点不见得看起来要多高级。</p>
-<h5 id="切入点分析">切入点分析</h5>
+<h3 id="切入点分析">切入点分析</h3>
 <p><font color=blue>1.</font> 前提：TBT还无法量化分析出股票明天是涨还是跌。<br>
 <font color=blue>2.</font> ＞0：相对简单，交给我们的任务就是找出最高点做T，同时应对好一个现实难点--测算的最高点出现后会不会出现更高的点。毕竟判断失误不仅利润减少还要考虑到后面交易日仓位减少带来的损失。<br>
 <img src="https://tibuti.cn/post-images/1608406499925.gif" alt="" loading="lazy"><br>
@@ -71,15 +72,15 @@
 <h3 id="机器学习">机器学习</h3>
 <p>为了适应股市的变化，TBT加入了机器学习(AutoML）和神经科学的方法。通过对量化因子和计算参数的实时调整以确保最高价格测算的准确率。</p>
 <h2 id="四-趋势判断">四、趋势判断</h2>
-<p>TBT以复星医药1999年至2021年共22年5143个交易日的测算数据为样本进行一些说明。随机找了一段波动较大的趋势，我们看下在趋势中TBT策略的买卖点提示表现如何。</p>
+<p>TBT以复星医药1999年至2021年共22年5143个交易日的测算数据为样本进行一些说明。随机找了一段波动较大的趋势，我们看下在趋势中TBT策略的买卖点提示表现如何。如果想检验次日最高点准不准，需要先阅读下一篇文章介绍的参照方法。</p>
 <p>图为复星医药2019年5月16日至2019年12月13日共145个交易日<br>
-<img src="https://tibuti.cn/post-images/1609599501138.gif" alt="" loading="lazy"></p>
+<img src="https://tibuti.cn/post-images/1609614429482.gif" alt="" loading="lazy"></p>
 <p>为了让图看起来有科技感我故意搞的很复杂，其实理解起来很简单：<br>
 <font  color=blue size=3>收盘价一旦大于测算价，上升趋势开始，反之亦然。</font><br>
 或者理解为<br>
 <font  color=blue size=3>收盘价的线压过测算价的线，上升趋势开始，反之亦然。</font></p>
 <p><strong>收盘价大于测算价为上升趋势的开始，体现的逻辑是：测算价越低买这只股票的风险越小。</strong></p>
-<h4 id="显著优势">显著优势</h4>
+<h3 id="显著优势">显著优势</h3>
 <p><font color=blue>1.</font>因为是以价格机制作为判断标准，不管有多少个交易日趋势线都很平滑，不会上串下跳造成错判。</p>
 <p><font color=blue>2.</font>买卖点提示原则性强，并不会因为某一天两天涨跌幅度大而频繁提示。收盘价和测算价不能形成量化计算上的交叉买卖提示就不会出现。比如图中复星医药145个交易日波动那么大也才提示三次。</p>
 <p>局部放大400%，交叉点还是只有一个。<br>
@@ -89,13 +90,9 @@
 <figure data-type="image" tabindex="1"><img src="https://tibuti.cn/post-images/1608397211633.png" alt="" loading="lazy"></figure>
 <p>Tibuti.cn是<code><font color=blue>一个人</font></code>的独立量化分析展示站点，环境和能力受限制于方方面面。在乐于分享的同时仍需强调几个很关键的问题：</p>
 <p><font color=blue>1.</font>分享：对不收费、不推票、不建群、不开课、不卖软件作保证，对信息提供的及时性、出错发生不作保证。</p>
-<p><font color=blue>2.</font>收入：只接受非交流前的打赏与捐赠，为了感谢打赏金额排名靠前的TBT可提供无固定期限的咨询（第3条除外），金额可以是多次累计排名靠前的标准取决于我那一刻的想法。</p>
-<p><font color=blue>3.</font>拒绝：暂时拒绝回答量化分析结果之外的任何问题。</p>
-<p><strong>打赏和捐赠支持100元以上7天无理由退款</strong></p>
+<p><font color=blue>2.</font>拒绝：拒绝回答量化分析结果之外的任何问题。</p>
 <p><strong>本站点所示仅供参考，不作为投资者交易的依据，投资者据此操作风险自担。</strong></p>
-<hr>
-<figure data-type="image" tabindex="2"><img src="https://tibuti.cn/post-images/1609605715821.gif" alt="" loading="lazy"></figure>
-<h4 id="联系">联系</h4>
+<h3 id="联系">联系</h3>
 <p>邮箱：ortis#qq.com（把#换为@）</p>
 ]]></content>
     </entry>
