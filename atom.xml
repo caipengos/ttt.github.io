@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tibuti.cn</id>
-    <title>TIBUTI</title>
-    <updated>2021-05-21T07:42:21.787Z</updated>
+    <title>sketch</title>
+    <updated>2021-05-21T07:48:41.412Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tibuti.cn"/>
     <link rel="self" href="https://tibuti.cn/atom.xml"/>
-    <subtitle>T否T否，应是红肥绿瘦</subtitle>
+    <subtitle>sketch分享</subtitle>
     <logo>https://tibuti.cn/images/avatar.png</logo>
     <icon>https://tibuti.cn/favicon.ico</icon>
-    <rights>All rights reserved 2021, TIBUTI</rights>
+    <rights>All rights reserved 2021, sketch</rights>
 </feed>
